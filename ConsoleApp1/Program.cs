@@ -23,12 +23,14 @@ namespace SortingAlgh
             //  Insertion.InsertionSort(arr);
             //  Merge.MergeSort(arr);,
             int[] arr2 = new int[] { 1, 8, 3, 9, 4, 5, 7 };
-            Count.Count_Sort(arr2);
-            #region print array
-            for (int i = 0; i < arr2.Length; i++)
-                Console.WriteLine(arr2[i]);
-            #endregion
+            Array.Sort(arr2);
+            int index = BinarySearch._BinarySearch(arr2, 92);
 
+            //#region print array
+            //for (int i = 0; i < arr2.Length; i++)
+            //    Console.WriteLine(arr2[i]);
+            //#endregion
+            Console.WriteLine("index= "+index);
             Console.WriteLine(sw.Elapsed);
 
 
